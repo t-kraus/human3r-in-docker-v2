@@ -5,6 +5,7 @@ services:
     runtime: nvidia
     volumes:
       - ./Human3R:/workspace
+      - /usr/local/cuda:/usr/local/cuda
     deploy:
       resources:
         reservations:
