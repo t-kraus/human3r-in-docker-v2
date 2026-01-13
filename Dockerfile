@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt-get update && apt-get install -y adduser sudo unzip git python3-pip python3-venv python3 cmake locales && rm -rf /var/lib/apt/lists/* \
+RUN apt-get update && apt-get install -y adduser sudo unzip git python3-pip python3-venv python3 cmake locales libglib2.0-0 libgles2-mesa-dev wget libgl1 && rm -rf /var/lib/apt/lists/* \
 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 
